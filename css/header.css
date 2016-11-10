@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:14px;font-family: "microsoft yahei";}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+header,article,section,footer,nav{display: block;}
+/*清浮动*/
+.clear:after{content:"";display:block;clear:both;}
+.clear{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+
+
+
+
+
+/*header开始*/
+header{
+	width: 100%;
+	height: 60px;
+}
+
+/*包裹层*/
+.wrap_header{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+}
+
+/*logo*/
+#logo{
+	vertical-align: middle;
+	height: 100%;
+	margin-right: 5px;
+}
+
+/*导航*/
+#nav{
+	position: relative;
+}
+
+#nav li{
+	float: left;
+}
+
+
+#nav li a{
+	display: block;
+	line-height: 60px;
+	font-size: 16px;
+	height: 60px;
+	padding: 0 20px;
+	color: #000000;
+}
+
+
+#move{
+	z-index: -1;
+	background-color: #cf1423;
+	position: absolute;
+	height: 60px;
+	top: 0;
+	left: 0;
+	transition: all linear 0.1s;
+}
+
+
+/*注册和登录*/
+#registerANDlogin{
+	height: 100%;
+	width: auto;
+}
+
+#registerANDlogin a{
+	padding: 10px;
+	text-align: center;
+	line-height: 60px;
+	color: #000000;
+}
+
+/*header结束*/

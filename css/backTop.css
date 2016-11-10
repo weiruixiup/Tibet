@@ -1,0 +1,64 @@
+
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:14px;font-family: "microsoft yahei";}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+header,article,section,footer,nav{display: block;}
+/*清浮动*/
+.clear:after{content:"";display:block;clear:both;}
+.clear{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+
+
+
+
+/*返回顶部*/
+#setTop{
+	width: 63px;
+	height: 127px;
+	position: fixed;
+	bottom: -100px;
+	right: 100px;
+	background: url(../img/goup.png) center no-repeat;
+	cursor: pointer;
+	transition: all linear 1s; 
+	visibility: hidden;
+}
+#setTop:hover{
+	background: url(../img/gouprotate.gif) center no-repeat;
+}
+/*返回顶部结束*/
+
+/*二维码开始*/
+#erweima{
+	width: 140px;
+	height: 160px;
+	position: fixed;
+	right: 10px;
+	bottom: 0px;
+	background: url(../img/qrcode_bg.jpg)  no-repeat;
+	visibility: hidden;
+	transition: all linear 1s; 
+}
+#erweima img{
+	width: 121px;
+	height: 121px;
+	padding: 30px 10px;
+}
+#erweima span{
+	display: block;
+	width: 14.5px;
+	height: 12.5px;
+	position: absolute;
+	right: 5.5px;
+	top: 4.5px;
+	cursor: pointer;
+}
+/*二维码结束*/

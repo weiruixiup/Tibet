@@ -1,0 +1,2175 @@
+
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:14px;font-family: "microsoft yahei";}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+header,article,section,footer,nav{display: block;}
+/*清浮动*/
+.clear:after{content:"";display:block;clear:both;}
+.clear{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+
+html ,body{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/*城市导航开始*/
+
+#city_nav{
+	width: 100%;
+	height: 40px;
+	background-color: #BB2B4A;
+}
+
+.wrap_city_nav{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+}
+
+.wrap_city_nav ul{
+	font-size: 0;
+}
+
+.wrap_city_nav li{
+	float: left;
+	box-sizing: border-box;
+}
+
+.wrap_city_nav ul li a{
+	color: white;
+	margin-left: 42px;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+/*城市导航结束*/
+
+
+/*banner开始 宣传图*/
+#banner{
+	width: 100%;
+	height: 290px;
+	margin-bottom: 30px;
+	background: url(../img/MUT427342068766.jpg) no-repeat center;	
+}
+
+
+/*row开始 天气上面*/
+#row{
+	width: 100%;
+	height: 55px;
+}
+
+.wrap_row{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+}
+/*左边的form和文字*/
+#row_left{
+	width: 740px;
+	height: 36px;
+}
+/*搜索框总和*/
+#search{
+	width: 321px;
+	height: 36px;
+}
+
+/*第一个搜索框*/
+#search form input:nth-child(1){
+	width: 286px;
+	height: 34px;
+	border: 1px solid #CC0000;
+	padding-left: 8px;
+}
+/*第二个button*/
+#search form input:nth-child(2){
+	width: 34px;
+	height: 34px;
+	border: 1px solid #CC0000;
+	background-color: #CC0000;
+	color: white;
+	cursor: pointer;
+}
+/*后面的文字框*/
+#search~ul {
+	width: 419px;
+	height: 36px;
+}
+
+#search~ul li{
+	float: right;
+}
+/*文字样式*/
+#search~ul li a{
+	line-height: 36px;
+	padding: 10px;
+	color: #000000;
+}
+
+#search~ul li a:hover{
+	text-decoration: underline;	
+}
+/*右边的天气框*/
+#weather{
+	width: 250px;
+	height: 55px;
+	border: 1px solid darkgrey;
+	box-sizing: border-box;
+	position: relative;
+}
+/*第一行文字*/
+#lasa_weather{
+	display: block;
+	line-height: 27px;
+	width: 60px;
+	position: absolute;
+	left: 15px;
+}
+/*太阳图片*/
+#sun{
+	display: inline-block;
+	width: 50px;
+	position: absolute;
+	left: 95px;
+	top: 5px;
+}
+/*第三行温度*/
+#lasa_wendu{
+	display: inline-block;
+	width: 50px;
+	position: absolute;
+	left: 170px;
+	line-height: 27px;
+}
+
+
+/*轮播开始 精彩西藏*/
+#lunbo_photo{
+	width: 100%;
+	height: 490px;
+	margin-top: 30px;
+}
+/*包裹层*/
+.wrap_lunbo_photo{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+}
+/*左边*/
+#lunbo_photo_left{
+	width: 740px;
+	height: 490px;
+	overflow: hidden;
+	position: relative;
+}
+/*标题*/
+#lunbo_photo_left h1{
+	width: 220px;
+	height: 29px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+/*轮播的大小*/
+#lunbo,#lunbo2{
+	width: 2220px;
+	height: 410px;
+	position: absolute;
+	transition: left 1s;
+}
+#lunbo{
+	left: 0;
+	z-index: 2;
+}
+#lunbo2{
+	left: 2220px;
+	z-index: 3;
+	background-color: white;
+}
+/*包裹图片的div*/
+#lunbo>div,#lunbo2>div{
+	width: 740px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+
+/*照片样式*/
+#lunbo img,#lunbo2 img{
+	width: 100%;
+	height: 100%;
+	border-radius:3% ;
+}
+
+/*下面文字的设置*/
+#lunbo span,#lunbo2 span{
+	border-radius: 3%;
+	display: block;
+	text-align: center;
+}
+
+#lunbo span a,#lunbo2 span a{
+	color: white;
+}
+
+#lunbo span a:hover,#lunbo2 span a:hover{
+	text-decoration: underline;
+}
+/*第一张大图片定位以及下面文字样式*/
+#lunbo .photo_1_a,#lunbo2 .photo_1_a{
+	width: 360px;
+	height: 400px;
+	position: absolute;
+	top: 5px;left: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_1_a_wz,#lunbo2 #photo_1_a_wz{
+	width: 360px;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_1_b,#lunbo2 .photo_1_b{
+	overflow: hidden;
+	border-radius: 3%;
+	width: 113px;
+	height: 110px;
+	position: absolute;
+	top:5px ;left: 375px;
+}
+
+#lunbo #photo_1_b_wz,#lunbo2 #photo_1_b_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_1_c,#lunbo2 .photo_1_c{
+	width: 113px;
+	height: 110px;
+	position: absolute;
+	top: 5px;right: 125px ;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_1_c_wz,#lunbo2 #photo_1_c_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_1_d,#lunbo2 .photo_1_d{
+	width: 113px;
+	height: 110px;
+	position: absolute;
+	top: 5px;right: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_1_d_wz,#lunbo2 #photo_1_d_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_1_e,#lunbo2 .photo_1_e{
+	width: 113px;
+	height: 110px;
+	position: absolute;
+	top: 125px;left: 375px;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_1_e_wz,#lunbo2 #photo_1_e_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_1_f,#lunbo2 .photo_1_f{
+	width: 236px;
+	height: 110px;
+	position: absolute;
+	top: 125px;right: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_1_f_wz,#lunbo2 #photo_1_f_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_1_g,#lunbo2 .photo_1_g{
+	width: 365px;
+	height: 160px;
+	position: absolute;
+	bottom: 5px;right: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_1_g_wz,#lunbo2 #photo_1_g_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+/*第二张大图片设置以及下面文字设置*/
+#lunbo .photo_2_a,#lunbo2 .photo_2_a{
+	width: 415px;
+	height: 255px;
+	position: absolute;
+	top: 5px;left: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_2_a_wz,#lunbo2 #photo_2_a_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_2_b,#lunbo2 .photo_2_b{
+	width: 120px;
+	height: 135px;
+	position: absolute;
+	bottom: 5px;left: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_2_b_wz,#lunbo2 #photo_2_b_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_2_c,#lunbo2 .photo_2_c{
+	width: 120px;
+	height: 135px;
+	position: absolute;
+	bottom: 5px;left: 145px;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_2_c_wz,#lunbo2 #photo_2_c_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_2_d,#lunbo2 .photo_2_d{
+	width: 120px;
+	height: 135px;
+	position: absolute;
+	bottom: 5px;left: 290px;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_2_d_wz,#lunbo2 #photo_2_d_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_2_e,#lunbo2 .photo_2_e{
+	width: 175px;
+	height: 135px;
+	position: absolute;
+	top: 0;right: 135px;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_2_e_wz,#lunbo2 #photo_2_e_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_2_f,#lunbo2 .photo_2_f{
+	width: 115px;
+	height: 135px;
+	position: absolute;
+	top: 0;right: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_2_f_wz,#lunbo2 #photo_2_f_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_2_g,#lunbo2 .photo_2_g{
+	width: 310px;
+	height: 255px;
+	position: absolute;
+	bottom: 5px;right: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_2_g_wz,#lunbo2 #photo_2_g_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+/*第三张大图片设置以及下面文字设置*/
+#lunbo .photo_3_a,#lunbo2 .photo_3_a{
+	width: 135px;
+	height: 170px;
+	position: absolute;
+	top: 5px;left: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_3_a_wz,#lunbo2 #photo_3_a_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_3_b,#lunbo2 .photo_3_b{
+	width: 135px;
+	height: 170px;
+	position: absolute;
+	top: 5px;left: 145px;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_3_b_wz,#lunbo2 #photo_3_b_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_3_c,#lunbo2 .photo_3_c{
+	width: 135px;
+	height: 170px;
+	position: absolute;
+	top: 5px;left: 290px;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_3_c_wz,#lunbo2 #photo_3_c_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_3_d,#lunbo2 .photo_3_d{
+	width: 425px;
+	height: 220px;
+	position: absolute;
+	bottom: 5px;left: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_3_d_wz,#lunbo2 #photo_3_d_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_3_e,#lunbo2 .photo_3_e{
+	width: 300px;
+	height: 240px;
+	position: absolute;
+	top: 5px;right: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_3_e_wz,#lunbo2 #photo_3_e_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;right: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+#lunbo .photo_3_f,#lunbo2 .photo_3_f{
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	bottom: 5px;right: 0;
+	overflow: hidden;
+	border-radius: 3%;
+}
+
+#lunbo #photo_3_f_wz,#lunbo2 #photo_3_f_wz{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;left: 0px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 20px;
+}
+
+/*轮播圆点*/
+#buttons{
+	width: 100%;
+	height: 25px;
+	position: relative;
+	margin-top: 10px;
+}
+/*圆点样式*/
+#buttons li{
+	position: absolute;
+	top: 420px;
+	width: 14px;
+	height: 14px;
+	border: 1px solid darkgrey;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#buttons ul li:nth-child(1){
+	left: 300px;
+}
+#buttons ul li:nth-child(2){
+	left: 350px;
+}
+#buttons ul li:nth-child(3){
+	left: 400px;
+}
+#buttons .on{
+	background-color: red;
+}
+
+/*轮播的右边 精彩西藏右边*/
+#lunbo_photo_right{
+	width: 250px;
+	height: 489px;
+	border-bottom: 1px dashed #ddd;
+}
+
+#lunbo_photo_right h1{
+	width: 220px;
+	height: 29px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+#lunbo_photo_right article{
+	width: 250px;
+	height: 40.6px;
+	margin-bottom: 15px;
+}
+
+#lunbo_photo_right article h3{
+	width: 100%;
+	height: 17.6px;
+	font-size: 16px;
+	margin-bottom: 3px;
+	margin-top: 0px;
+	color: #333333;
+}
+
+#lunbo_photo_right article p{
+	width: 100%;
+	height: 20px;
+	color: #898989;
+}
+/*轮播结束*/
+
+
+
+/*游西藏开始*/
+#youxizang{
+	width: 100%;
+	height: 630px;
+	margin-top: 30px;
+}
+/*包裹层*/
+.wrap_youxizang{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+}
+/*标题*/
+.wrap_you_title{
+	width: 100%;
+	height: 30px;
+	/*margin-bottom: 10px;*/
+	position: relative;
+}
+
+.wrap_you_title>h1{
+	width: 175px;
+	height: 29px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*上面的虚线*/
+.border{
+	width: 730px;
+	border-bottom: 1px darkgrey dashed;
+	position: absolute;
+	top: 14.5px;
+	left: 180px;
+}
+/*更多*/
+.more{
+	width: 75px;
+	height: 29px;
+	text-align: center;
+	line-height: 29px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.more a{
+	color: #333;
+}
+
+.more a:hover{
+	text-decoration: underline;
+}
+/*左边图片大图层*/
+#you_left{
+	width: 740px;
+	height: 583px;
+	border-bottom: 1px solid dashed;
+	margin-top: 10px;
+}
+/*博客小标题*/
+#raider_blog{
+	width: 100%;
+	height: 30px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+#raider_blog span{
+	width: 180px;
+	display: block;
+	color: #333;
+	line-height: 30px;
+	position: absolute;
+	text-align: center;
+}
+
+#raider_blog a{
+	display: block;
+	width: 120px;
+	height: 30px;
+	position: absolute;
+	right: 0;
+}
+/*图片展示*/
+#raider_wz{
+	width: 730px;
+	height: 123px;
+	position: relative;
+	border-bottom: 1px darkgray dashed;
+	margin-top: 10px;
+}
+/*图片具体*/
+.y_photo{
+	width: 160px;
+	height: 100px;
+	border-radius: 3%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.y_photo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 3%;
+}
+/*官方标志*/
+.guanfang{
+	width: 33px;
+	height: 37px;
+	position: absolute;
+	left: 125px;
+	top: 60px;
+}
+.guanfang img{
+	width: 100%;
+	height: 100%;
+}
+/*标题*/
+#raider_wz h3{
+	width: 417px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	left: 170px;
+}
+
+#raider_wz h3 a{
+	color: #333333;
+	text-align: center;
+	font-size: 16px;
+}
+#raider_wz h3 a:hover{
+	text-decoration: underline;
+}
+/*作者前面的logo*/
+.tx_1{
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 35px;
+	left: 170px;
+}
+/*作者*/
+.zuozhe{
+	display: block;
+	height: 20px;
+	color: #333333;
+	font-size: 12px;
+	width: 36px;
+	position: absolute;
+	top: 35px;
+	left: 200px;
+}
+/*出处官方*/
+.guanfang_ts{
+	display: block;
+	width: 90px;
+	height: 20px;
+	color: #cf1423;
+	position: absolute;
+	font-size: 12px;
+	top: 35px;
+	left: 240px;
+}
+/*导读*/
+.daodu{
+	width: 420px;
+	height: 35px;
+	position: absolute;
+	bottom: 25px;
+	left: 170px;
+}
+
+.daodu a{
+	font-size: 12px;
+	color: #333333;
+}
+
+.daodu a:hover{
+	text-decoration: underline;
+}
+/*赞logo*/
+.zan{
+	width: 52px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.zan p{
+	width: 15px;
+	height: 15px;
+	padding-left: 13px;
+	font-size: 12px;
+	color: #333333;
+}
+/*热度*/
+.hot{
+	width: 80px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 25px;
+}
+
+
+/*游西藏右边*/
+#you_right{
+	width: 250px;
+	height: 578px;
+	position: relative;
+}
+
+#you_right h3{
+	width: 100%;
+	height: 15.4px;
+	margin: 10px 0px 20px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*所有图片设置*/
+#you_right img{
+	width: 100%;
+	height: 100%;
+	border-radius: 3%;
+}
+/*图片上的文字*/
+#you_right span{
+	width: 100%;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-radius: 3%;
+	background-color: rgba(0,0,0,.5);
+	line-height: 15px;
+	text-align: center;
+}
+
+#you_right span a{
+	color: white;
+	font-size: 12px;
+}
+
+.p_nmc{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 45.4px;
+	left: 0;
+}
+
+.p_nyh{
+	width: 140px;
+	height: 72px;
+	position: absolute;
+	right: 0;
+	top: 355px;
+}
+
+.P_bjt{
+	width: 100px;
+	height: 122px;
+	position: absolute;
+	left: 0;
+	top: 355px;
+}
+
+.p_lmlc{
+	width: 100px;
+	height: 90px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.p_zsl{
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	bottom: 0;
+	left: 110px;
+}
+/*游西藏结束*/
+
+
+/*图说西藏开始*/
+#tsxz{
+	width: 100%;
+	height: 460px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*包裹层*/
+.wrap_tsxz{
+	width: 1000px;
+	height: 451px;
+	margin: auto;
+}
+/*左边*/
+#tsxz_left{
+	width: 740px;
+	height: 100%;
+	position: relative;
+}
+/*左边logo*/
+.tsxz_logo{
+	width: 220px;
+	height: 29px;
+	margin-bottom: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*虚线*/
+.tsxz_boeder{
+	width: 420px;
+	border-bottom: 1px dashed darkgray;
+	position: absolute;
+	top: 14px;
+	left: 210px;
+}
+/*更多*/
+.tsxz_more{
+	width: 90px;
+	height: 19px;
+	margin-top: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.tsxz_more a{
+	color: #333333;
+}
+
+/*大轮播*/
+.tsxz_lunbo{
+	background: url(../img/fa1.jpg) center no-repeat;
+	background-size: 100%;
+	width: 740px;
+	height: 407px;
+	position: absolute;
+	top: 39px;
+	left: 0;
+	border-radius: 3%;
+	overflow: hidden;
+}
+/*小轮播*/
+.tsxz_lunbo_ch{
+	width: 100%;
+	height: 105px;
+	border-radius:3% ;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+}
+.tsxz_lunbo_ch .iborder{
+	border: 2px solid white;
+}
+.tsxz_lunbo_ch ul{
+	width: 650px;
+	height: 89px;
+	margin: 0px auto;
+}
+
+.tsxz_lunbo_ch ul li{
+	float: left;
+	width: 84px;
+	height: 69px;
+	margin: 20px 0 0 17px;
+	border-radius: 10px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.tsxz_lunbo_ch ul li img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+/*大轮播上的文字*/
+.tsxz_lunbo p{
+	width: 260px;
+	color: white;
+	height: 19px;
+	text-align: right;
+	line-height: 19px;
+	position: absolute;
+	top: 45px;
+	right: 70px;
+}
+
+/*图说西藏右边*/
+#tsxz_right{
+	width: 250px;
+	height: 450px;
+	position: relative;
+}
+/*标题*/
+#tsxz_right h3{
+	width: 170px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#tsxz_right h3 img{
+	width: 100%;
+	height: 100%;
+}
+/*更多*/
+.tsxz_right_more{
+	width: 75px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #333333;
+	line-height: 30px;
+	text-align: center;
+}
+/*下面图片设置*/
+#tsxz_right div img{
+	width: 100%;
+	height: 100%;
+	border-radius:3% ;
+}
+/*第一张酸奶*/
+.suannai{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top: 42px;
+	left: 0px;
+}
+.suannai>a{
+	display: block;
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -19px;
+	margin-top: -19px;
+}
+.suannai p{
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -27px;
+	color: darkgrey;
+}
+.suannai p:hover{
+	text-decoration: underline;
+}
+/*第二张*/
+.sf2{
+	width: 78px;
+	height: 60px;
+	position: absolute;
+	bottom: 113px;
+	left: 0;
+}
+.sf2>a{
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -13.5px;
+	margin-top: -13.5px;
+}
+.sf2 p{
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	color: darkgrey;
+}
+.sf2 p:hover{
+	text-decoration: underline;
+}
+/*第三张*/
+.sf1{
+	width: 78px;
+	height: 60px;
+	position: absolute;
+	bottom: 113px;
+	right: 0;
+}
+.sf1>a{
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -13.5px;
+	margin-top: -13.5px;
+}
+.sf1 p{
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	color: darkgrey;
+}
+.sf1 p:hover{
+	text-decoration: underline;
+}
+/*第四张*/
+.tw{
+	width: 78px;
+	height: 60px;
+	position: absolute;
+	bottom: 113px;
+	left: 86px;
+}
+.tw>a{
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -13.5px;
+	margin-top: -13.5px;
+}
+.tw2 p{
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	color: darkgrey;
+}
+.tw p:hover{
+	text-decoration: underline;
+}
+/*第五张*/
+.hg{
+	width: 78px;
+	height: 60px;
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+}
+.hg>a{
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -13.5px;
+	margin-top: -13.5px;
+}
+.hg p{
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	color: darkgrey;
+}
+.hg p:hover{
+	text-decoration: underline;
+}
+/*第六张*/
+.sys{
+	width: 78px;
+	height: 60px;
+	position: absolute;
+	bottom: 25px;
+	left: 86px;
+}
+.sys>a{
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -13.5px;
+	margin-top: -13.5px;
+}
+.sys p{
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	color: darkgrey;
+}
+.sys p:hover{
+	text-decoration: underline;
+}
+/*第七张*/
+.xc{
+	width: 78px;
+	height: 60px;
+	position: absolute;
+	bottom: 25px;
+	right: 0;
+}
+.xc>a{
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -13.5px;
+	margin-top: -13.5px;
+}
+.xc p{
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	color: darkgrey;
+}
+.xc p:hover{
+	text-decoration: underline;
+}
+/*图说西藏结束*/
+
+
+/*读西藏开始*/
+#duxz{
+	width: 100%;
+	height: 445px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*包裹*/
+.wrap_duxz{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+/*logo*/
+.duxz_logo{
+	width: 280px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*虚线*/
+.duxz_boeder{
+	width: 635px;
+	border-bottom: 1px dashed darkgrey;
+	position: absolute;
+	top: 15px;
+	left: 270px;
+}
+/*更多*/
+.duxz_more{
+	width: 90px;
+	height: 30px;
+	color: #333333;
+	text-align: right;
+	line-height: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+/*大图*/
+.duxz_ph{
+	width: 200px;
+	height: 400px;
+	border-radius: 3% 0 0 3%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+.duxz_ph img{
+	width: 100%;
+	height: 100%;
+}
+/*盘点*/
+.pandian{
+	width: 200px;
+	height: 400px;
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+	border-radius: 0 3% 3% 0;
+	background-color: #eeeeee;
+}
+.pandian h3{
+	width: 185px;
+	height: 34.5px;
+	position: absolute;
+	top: 10px;
+	left: 7.5px;
+	color: #333333;
+	font-size: 15px;
+}
+.pandian p{
+	width: 185px;
+	height: 80px;
+	font-size: 12px;
+	color: #898989;
+	position: absolute;
+	top: 65px;
+	left: 7.5px;
+}
+/*风俗*/
+.fengsu{
+	width: 280px;
+	height: 16px;
+	color: #333333;
+	position: absolute;
+	top: 45px;
+	left: 420px;
+}
+/*历史*/
+.lishi{
+	width: 280px;
+	height: 16px;
+	color: #333333;
+	position: absolute;
+	top: 45px;
+	left: 720px;
+}
+/*宗教*/
+.zongjiao{
+	width: 280px;
+	height: 16px;
+	color: #333333;
+	position: absolute;
+	top: 260px;
+	left: 420px;
+}
+/*其他*/
+.other{
+	width: 280px;
+	height: 16px;
+	color: #333333;
+	position: absolute;
+	top: 260px;
+	left: 720px;
+}
+/*风俗图片*/
+.fengsu_ph{
+	width: 280px;
+	height: 130px;
+	position: absolute;
+	top: 95px;
+	left: 420px;
+	border-radius: 3%;
+	overflow: hidden;
+}
+.fengsu_ph>div{
+	width: 120px;
+	height: 130px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.fengsu_ph>div>img{
+	width: 100%;
+	height: 100%;
+}
+.fengsu_ph>article{
+	width: 160px;
+	height: 100%;
+	background-color: #eee;
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+}
+.fengsu_ph article h4{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+.fengsu_ph article p{
+	width: 90%;
+	height: 52px;
+	font-size: 12px;
+	color: #898989;
+	position: absolute;
+	top: 50px;
+	left: 5px;
+} 
+.fengsu_ph>article>div{
+	width: 40px;
+	height: 20px;
+	background: #eb5f6a;
+	border-radius: 15% 0 3% 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.fengsu_ph>article>div>a{
+	color: white;
+}
+/*宗教图片*/
+.zongjiao_ph{
+	width: 280px;
+	height: 130px;
+	position: absolute;
+	bottom: 0;
+	left: 420px;
+	border-radius: 3%;
+	overflow: hidden;
+}
+.zongjiao_ph>div{
+	width: 120px;
+	height: 130px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.zongjiao_ph>div>img{
+	width: 100%;
+	height: 100%;
+}
+.zongjiao_ph>article{
+	width: 160px;
+	height: 100%;
+	background-color: #eee;
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+}
+.zongjiao_ph article h4{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+.zongjiao_ph article p{
+	width: 90%;
+	height: 52px;
+	font-size: 12px;
+	color: #898989;
+	position: absolute;
+	top: 50px;
+	left: 5px;
+} 
+.zongjiao_ph>article>div{
+	width: 40px;
+	height: 20px;
+	background: #eb5f6a;
+	border-radius: 15% 0 3% 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.zongjiao_ph>article>div>a{
+	color: white;
+}
+
+/*历史图片*/
+.lishi_ph{
+	width: 280px;
+	height: 130px;
+	position: absolute;
+	top: 95px;
+	right: 0;
+	border-radius: 3%;
+	overflow: hidden;
+}
+.lishi_ph>div{
+	width: 120px;
+	height: 130px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.lishi_ph>div>img{
+	width: 100%;
+	height: 100%;
+}
+.lishi_ph>article{
+	width: 160px;
+	height: 100%;
+	background-color: #eee;
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+}
+.lishi_ph article h4{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+.lishi_ph article p{
+	width: 90%;
+	height: 52px;
+	font-size: 12px;
+	color: #898989;
+	position: absolute;
+	top: 50px;
+	left: 5px;
+} 
+.lishi_ph>article>div{
+	width: 40px;
+	height: 20px;
+	background: #eb5f6a;
+	border-radius: 15% 0 3% 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.lishi_ph>article>div>a{
+	color: white;
+}
+
+/*其他图片*/
+.other_ph{
+	width: 280px;
+	height: 130px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 3%;
+	overflow: hidden;
+}
+.other_ph>div{
+	width: 120px;
+	height: 130px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.other_ph>div>img{
+	width: 100%;
+	height: 100%;
+}
+.other_ph>article{
+	width: 160px;
+	height: 100%;
+	background-color: #eee;
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+}
+.other_ph article h4{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+.other_ph article p{
+	width: 90%;
+	height: 52px;
+	font-size: 12px;
+	color: #898989;
+	position: absolute;
+	top: 50px;
+	left: 5px;
+} 
+.other_ph>article>div{
+	width: 40px;
+	height: 20px;
+	background: #eb5f6a;
+	border-radius: 15% 0 3% 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.other_ph>article>div>a{
+	color: white;
+}
+/*读西藏结束*/
+
+
+/*西藏文化开始*/
+#culture{
+	width: 100%;
+	height: 300px;
+	margin-top: 30px;
+}
+/*包裹*/
+.wrap_culture{
+	width:1000px;
+	height: 300px;
+	margin: auto;
+}
+/*文化的头部*/
+.culture_head{
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+/*logo*/
+.culture_head h1{
+	width: 240px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*虚线*/
+.culture_border{
+	width: 562px;
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	border-bottom: 1px dashed darkgray;
+}
+/*标题的文字*/
+.culture_head ul{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 30px;
+}
+.culture_head ul li{
+	float: left;
+}
+.culture_head ul li a{
+	font-size: 12px;
+	padding: 9px;
+	text-align: center;
+	line-height: 30px;
+}
+.culture_head ul li:nth-child(1) a{
+	color: #cf1423;
+}
+
+/*歌曲盒子*/
+#music_box1{
+	width: 1000px;
+	height: 227px;
+	margin-top: 20px;
+}
+#music_box2{
+	width: 1000px;
+	height: 227px;
+	margin-top: 20px;
+	display: none;
+}
+#music_box3{
+	width: 1000px;
+	height: 227px;
+	margin-top: 20px;
+	display: none;
+}
+
+#music_box1 ul li{
+	float: left;
+}
+#music_box2 ul li{
+	float: left;
+}
+#music_box3 ul li{
+	float: left;
+}
+/*第一歌曲*/
+#li1{
+	width: 130px;
+}
+#li1>a{
+	display: block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: url(../img/91620780dd7912397dda14426b786a6b0b7d0a20cf4866c.jpg) center no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+#li1>a img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#li1 article{
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+}
+#li1 article a:hover{
+	text-decoration: underline;
+}
+#li1 p{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+#li1 div{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+/*第二歌曲*/
+#li2{
+	width: 130px;
+	margin-left: 44px;
+}
+#li2>a{
+	display: block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: url(../img/5003420我的天使.jpg) no-repeat center;
+	background-size: 100%;
+	position: relative;
+}
+#li2>a img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#li2 article{
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+}
+#li2 article a:hover{
+	text-decoration: underline;
+}
+#li2 p{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+#li2 div{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+/*第三歌曲*/
+#li3{
+	width: 130px;
+	margin-left: 44px;
+}
+#li3>a{
+	display: block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: url(../img/4000769姑娘你在何方.jpg) no-repeat center;
+	background-size: 100%;
+	position: relative;
+}
+#li3>a img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#li3 article{
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+}
+#li3 article a:hover{
+	text-decoration: underline;
+}
+#li3 p{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+#li3 div{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+/*第四歌曲*/
+#li4{
+	width: 130px;
+	margin-left: 44px;
+}
+#li4>a{
+	display: block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: url(../img/8688898a2cc7cd98d1001e967a73a12ba0e7bec54e79717.jpg) no-repeat center;
+	background-size: 100%;
+	position: relative;
+}
+#li4>a img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#li4 article{
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+}
+#li4 article a:hover{
+	text-decoration: underline;
+}
+#li4 p{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+#li4 div{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+/*第五歌曲*/
+#li5{
+	width: 130px;
+	margin-left: 44px;
+}
+#li5>a{
+	display: block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: url(../img/r5.jpg) no-repeat center;
+	background-size: 100%;
+	position: relative;
+}
+#li5>a img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#li5 article{
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+}
+#li5 article a:hover{
+	text-decoration: underline;
+}
+#li5 p{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+#li5 div{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+/*第六歌曲*/
+#li6{
+	width: 130px;
+	margin-left: 44px;
+}
+#li6>a{
+	display: block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: url(../img/5676630缘定情.jpg) no-repeat center;
+	background-size: 100%;
+	position: relative;
+}
+#li6>a img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#li6 article{
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+}
+#li6 article a:hover{
+	text-decoration: underline;
+}
+#li6 p{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+#li6 div{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+/*文化传播结束*/
+
+
+
+/*登录*/
+#mengban{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+}
+#mylog{
+	position: absolute;
+	width: 600px;
+	height: 320px;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -160px;
+	z-index: 99;
+	border-radius: 3%;
+	overflow: hidden;
+}
+#mylog_head{
+	width: 100%;
+	height: 60px;
+	background: url(../img/login_header.png) center no-repeat;
+	background-size:100% ;
+}
+#mylog_head img{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+}
+
+#mylog_content{
+	width: 100%;
+	height: 250px;
+	background-color: white;
+	border-radius: 0 0 3% 3%;
+	overflow: hidden;
+}
+
+.mylog_content_left {
+	width: 60%;
+	height: 100%;
+	position: relative;
+}
+#text{
+	width: 70%;
+	height: 30px;
+	position: absolute;
+	left: 15%;
+	top: 30px;
+	padding-left: 5px;
+	border: 1px solid darkgrey;
+	border-radius:3px ;
+}
+
+#password{
+	width: 70%;
+	height: 30px;
+	position: absolute;
+	left: 15%;
+	border: 1px solid darkgrey;
+	top: 90px;
+	border-radius:3px ;
+	padding-left: 5px;
+}
+
+#chcek{
+	position: absolute;
+	top: 140px;
+	left: 15%;
+}
+.mylog_content_left form span{
+	position: absolute;
+	left: 20%;
+	top: 136px;
+}
+.mylog_content_left form a{
+	position: absolute;
+	left: 40%;
+	top: 136px;
+	color: #CF1423;
+}
+.mylog_content_left form a:hover{
+	text-decoration: underline;
+}
+#submit{
+	width: 72%;
+	height: 35px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 35px;
+	background-color: #CF1423;
+	color: white;
+	position: absolute;
+	bottom: 30px;
+	left: 14%;
+	border: none;
+	border-radius: 3px;
+}
+
+.mylog_content_right{
+	width: 38%;
+	height: 80%;
+	margin-top: 5%;
+	border-left: 1px dashed darkgrey;
+	position: relative;
+	
+}
+.mylog_content_right p{
+	color: darkgrey;
+}
+
+.mylog_content_right p:nth-of-type(1){
+	position: absolute;
+	left: 10px;
+}
+.mylog_content_right p:nth-of-type(1) span{
+	color: #cf1423;
+}
+
+.mylog_content_right p:nth-of-type(2){
+	position: absolute;
+	left: 95px;
+	top: 40px;
+}
+.mylog_content_right p:nth-of-type(2) span{
+	color: #068223;
+}
+
+.mylog_content_right p:nth-of-type(3){
+	position: absolute;
+	left: 65px;
+	top: 80px;
+}
+.mylog_content_right p:nth-of-type(3) span{
+	color: #2680c2;
+}
+.mylog_content_right p:nth-of-type(4){
+	position: absolute;
+	left: 50px;
+	top: 120px;
+}
+.mylog_content_right p:nth-of-type(4) span{
+	color: #ec9600;
+}
+
+.mylog_content_right p:nth-of-type(5){
+	position: absolute;
+	left: 45px;
+	top: 160px;
+}
+.mylog_content_right p:nth-of-type(5) a{
+	color: #cf1423;
+}
+.mylog_content_right p:nth-of-type(5) a:hover{
+	text-decoration: underline;
+}
+/*登录结束*/
+
+
